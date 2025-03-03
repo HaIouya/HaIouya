@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>松子的代码笔记</title>
+  
+  <subtitle>技术探索与成长之路</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2025-02-28T07:52:30.615Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Songzi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2025/02/28/hello-world/"/>
+    <id>http://example.com/2025/02/28/hello-world/</id>
+    <published>2025-02-28T07:52:30.615Z</published>
+    <updated>2025-02-28T07:52:30.615Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>拯救上班族：Ubuntu下IKEv2连接VPN完全指南</title>
+    <link href="http://example.com/2024/05/19/ubuntu-ikev2-vpn-tutorial/"/>
+    <id>http://example.com/2024/05/19/ubuntu-ikev2-vpn-tutorial/</id>
+    <published>2024-05-19T07:30:00.000Z</published>
+    <updated>2025-03-03T07:40:22.028Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="拯救上班族：Ubuntu下IKEv2连接VPN完全指南"><a href="#拯救上班族：Ubuntu下IKEv2连接VPN完全指南" class="headerlink" title="拯救上班族：Ubuntu下IKEv2连接VPN完全指南"></a>拯救上班族：Ubuntu下IKEv2连接VPN完全指南</h1><p><img src="https://img.example.com/vpn-connection.jpg" alt="VPN连接示意图"></p><blockquote><p>被公司VPN折磨得死去活来？校园网连接总是出问题？别担心，这篇文章将彻底解决你的痛点！</p></blockquote><p>还记得那个深夜，我盯着Terminal上不断闪烁的错误提示，只为了连上公司VPN提交那份已经延期的报告…如果你和我一样，经常需要通过VPN连接到校园网或公司内网，那这篇教程绝对值得收藏！</p><p>在众多VPN协议中，IKEv2以其出色的稳定性和安全性脱颖而出，特别适合在移动环境下使用。而在Linux系统中，StrongSwan则是实现IKEv2协议的最佳选择。下面，我将手把手教你如何在Ubuntu中配置它。</p><h2 id="1-什么是IKEv2？为什么选择它？"><a href="#1-什么是IKEv2？为什么选择它？" class="headerlink" title="1. 什么是IKEv2？为什么选择它？"></a>1. 什么是IKEv2？为什么选择它？</h2><p>老实说，当初我对各种VPN协议一头雾水，PPTP、L2TP、OpenVPN、IKEv2…名词一大堆，到底选哪个？</p><p>经过无数次痛苦的尝试后，我发现IKEv2（Internet Key Exchange第二版）是最适合日常使用的协议之一。它不仅加密安全，而且<strong>在网络切换时表现出色</strong>——这意味着当你从咖啡厅WiFi切换到手机热点时，你的VPN连接不会断开！对于像我这样经常在各种网络环境下工作的人来说，简直是福音。</p><p>IKEv2作为IPsec的一部分，提供了建立安全通信通道的方法，让你可以安全地访问远程网络资源。无论是查看公司内部文档，还是访问校园网限制的学术资源，都不在话下。</p><h2 id="2-安装StrongSwan：第一步总是简单的"><a href="#2-安装StrongSwan：第一步总是简单的" class="headerlink" title="2. 安装StrongSwan：第一步总是简单的"></a>2. 安装StrongSwan：第一步总是简单的</h2><p>首先，打开你的Terminal（快捷键<code>Ctrl+Alt+T</code>），输入以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install strongswan strongswan-plugin-eap-gtc</span><br></pre></td></tr></table></figure><p>这里我们安装了两个包：<code>strongswan</code>是核心程序，而<code>strongswan-plugin-eap-gtc</code>是一个用于支持EAP-GTC认证方式的插件。</p><blockquote><p>小贴士：如果你的VPN使用其他认证方式，可能需要安装不同的插件。常见的还有<code>strongswan-plugin-eap-mschapv2</code>。</p></blockquote><p>安装过程很快，通常不会有任何问题。不像我第一次配置OpenVPN时那样，编译了半天还报错…</p><h2 id="3-配置文件：魔鬼藏在细节里"><a href="#3-配置文件：魔鬼藏在细节里" class="headerlink" title="3. 配置文件：魔鬼藏在细节里"></a>3. 配置文件：魔鬼藏在细节里</h2><p>这一步是最关键的，也是我之前踩过最多坑的地方。需要编辑两个主要文件：</p><h3 id="3-1-配置-etc-ipsec-conf"><a href="#3-1-配置-etc-ipsec-conf" class="headerlink" title="3.1 配置/etc/ipsec.conf"></a>3.1 配置<code>/etc/ipsec.conf</code></h3><p>使用你喜欢的编辑器（我习惯用vim，你也可以用nano或gedit）打开配置文件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/ipsec.conf</span><br></pre></td></tr></table></figure><p>将以下内容添加到文件中（注意替换相关信息）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ipsec.conf - strongSwan IPsec configuration file</span></span><br><span class="line"></span><br><span class="line">config setup</span><br><span class="line">    charondebug=<span class="string">&quot;ike 1, knl 1, cfg 0&quot;</span>  <span class="comment"># 调试级别，出问题时很有用</span></span><br><span class="line"></span><br><span class="line">conn %default</span><br><span class="line">    ikelifetime=60m</span><br><span class="line">    keylife=20m</span><br><span class="line">    rekeymargin=3m</span><br><span class="line">    keyingtries=1</span><br><span class="line">    keyexchange=ikev2</span><br><span class="line">    authby=secret</span><br><span class="line"></span><br><span class="line">conn my-vpn  <span class="comment"># 可以改成有意义的名称，比如&quot;company-vpn&quot;或&quot;campus-vpn&quot;</span></span><br><span class="line">    left=%any</span><br><span class="line">    leftsourceip=%config</span><br><span class="line">    leftauth=eap-gtc</span><br><span class="line">    leftid=%any</span><br><span class="line">    right=your-vpn-server.com  <span class="comment"># 替换为你的VPN服务器地址</span></span><br><span class="line">    rightsubnet=0.0.0.0/0</span><br><span class="line">    rightid=@your-vpn-server.com  <span class="comment"># 服务器标识，通常是域名前加@</span></span><br><span class="line">    rightauth=pubkey</span><br><span class="line">    rightpubkey=%any</span><br><span class="line">    eap_identity=your-username  <span class="comment"># 替换为你的用户名</span></span><br><span class="line">    auto=start  <span class="comment"># 设置为&quot;add&quot;则不会自动连接，需手动启动</span></span><br></pre></td></tr></table></figure><p>这些参数看起来很多，但其实并不复杂：</p><ul><li><code>left</code>部分定义了客户端（也就是你的电脑）的配置</li><li><code>right</code>部分定义了服务器端的配置</li><li><code>rightsubnet=0.0.0.0/0</code>表示所有流量都通过VPN</li><li><code>auto=start</code>表示系统启动时自动连接VPN</li></ul><blockquote><p>警告：第一次配置时，我建议将<code>auto</code>设置为<code>add</code>而不是<code>start</code>，这样可以手动控制连接，避免配置错误导致无法登录系统的尴尬情况。</p></blockquote><h3 id="3-2-配置-etc-ipsec-secrets"><a href="#3-2-配置-etc-ipsec-secrets" class="headerlink" title="3.2 配置/etc/ipsec.secrets"></a>3.2 配置<code>/etc/ipsec.secrets</code></h3><p>接下来，我们需要设置认证信息：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/ipsec.secrets</span><br></pre></td></tr></table></figure><p>添加以下内容：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your-username : EAP <span class="string">&quot;your-password&quot;</span></span><br></pre></td></tr></table></figure><p>当然，要把<code>your-username</code>和<code>your-password</code>替换成你实际的用户名和密码。</p><blockquote><p>安全提示：这个文件包含明文密码，所以确保其权限正确：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 600 /etc/ipsec.secrets</span><br></pre></td></tr></table></figure></blockquote><h2 id="4-证书配置：建立信任"><a href="#4-证书配置：建立信任" class="headerlink" title="4. 证书配置：建立信任"></a>4. 证书配置：建立信任</h2><p>VPN连接的安全性很大程度上依赖于证书。StrongSwan默认使用<code>/etc/ipsec.d/cacerts</code>目录下的证书进行认证。</p><p>如果你的IT部门提供了特定的CA证书，你应该将其放在这个目录中。如果没有，我们可以使用系统自带的证书：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> -r /etc/ssl/certs/* /etc/ipsec.d/cacerts</span><br></pre></td></tr></table></figure><p>这一步我曾经忽略了，结果连接时不停地出现”无法验证服务器证书”的错误，折腾了好几个小时才发现问题所在。</p><h2 id="5-启动VPN连接：见证奇迹的时刻"><a href="#5-启动VPN连接：见证奇迹的时刻" class="headerlink" title="5. 启动VPN连接：见证奇迹的时刻"></a>5. 启动VPN连接：见证奇迹的时刻</h2><p>配置完成后，是时候启动VPN连接了：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ipsec restart</span><br><span class="line"><span class="built_in">sudo</span> ipsec up my-vpn  <span class="comment"># 使用你在ipsec.conf中定义的连接名称</span></span><br></pre></td></tr></table></figure><p>如果一切顺利，你将看到类似以下的输出：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">IKE_SA my-vpn[1] established between xx.xx.xx.xx[config]...xx.xx.xx.xx[your-vpn-server.com]</span><br><span class="line">CHILD_SA my-vpn&#123;1&#125; established with SPIs xxxxxxxx_x xxxxxxx_x and TS xx.xx.xx.xx/32 === 0.0.0.0/0</span><br></pre></td></tr></table></figure><p>看到这些信息时，我的心情简直无法用语言形容——那种历经千辛万苦终于成功的喜悦，只有经历过的人才能体会！</p><h2 id="6-验证连接：成功了吗？"><a href="#6-验证连接：成功了吗？" class="headerlink" title="6. 验证连接：成功了吗？"></a>6. 验证连接：成功了吗？</h2><p>连接建立后，我们需要验证VPN是否真的生效了。最简单的方法是查看你的公网IP是否已经改变：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl ifconfig.me</span><br></pre></td></tr></table></figure><p>或者访问<a href="http://whatismyip.com/">whatismyip.com</a>查看当前IP地址是否已切换为VPN服务器的IP地址。</p><p>另外，你也可以尝试访问只能通过VPN才能访问的内部资源，比如公司内网的网站或校园网的图书馆资源。</p><h2 id="7-故障排除：当事情不顺利时"><a href="#7-故障排除：当事情不顺利时" class="headerlink" title="7. 故障排除：当事情不顺利时"></a>7. 故障排除：当事情不顺利时</h2><p>VPN连接不是总能一次成功，如果你遇到了问题（就像我第一次配置时那样），以下是一些调试方法：</p><ol><li><p><strong>查看日志文件</strong>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">tail</span> -f /var/log/syslog | grep charon</span><br></pre></td></tr></table></figure><p>或</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">tail</span> -f /var/log/daemon.log</span><br></pre></td></tr></table></figure></li><li><p><strong>检查配置文件</strong>：确保所有参数都正确，特别是服务器地址、用户名和密码。</p></li><li><p><strong>测试网络连接</strong>：确保你可以ping通VPN服务器：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping your-vpn-server.com</span><br></pre></td></tr></table></figure></li><li><p><strong>重启服务并重新连接</strong>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ipsec restart</span><br><span class="line"><span class="built_in">sudo</span> ipsec up my-vpn</span><br></pre></td></tr></table></figure></li><li><p><strong>增加调试输出</strong>：在<code>ipsec.conf</code>的<code>config setup</code>部分增加更详细的调试信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">charondebug=&quot;ike 2, knl 2, cfg 2, net 2, esp 2, dmn 2, mgr 2&quot;</span><br></pre></td></tr></table></figure></li></ol><p>实在不行，就把日志文件发给IT支持团队吧（前提是你有这样的团队）。我曾经就是这样，把一大段日志发给公司的网络管理员，最后发现是服务器端的配置问题…</p><h2 id="8-进阶技巧：让生活更轻松"><a href="#8-进阶技巧：让生活更轻松" class="headerlink" title="8. 进阶技巧：让生活更轻松"></a>8. 进阶技巧：让生活更轻松</h2><h3 id="自动重连"><a href="#自动重连" class="headerlink" title="自动重连"></a>自动重连</h3><p>如果你希望VPN在断开后自动重连，可以创建一个简单的脚本：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># 保存为 /usr/local/bin/vpn-watchdog.sh</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span>; <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> ! ipsec status | grep -q <span class="string">&quot;ESTABLISHED&quot;</span>; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;VPN连接断开，尝试重连...&quot;</span></span><br><span class="line">    ipsec restart</span><br><span class="line">    ipsec up my-vpn</span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line">  <span class="built_in">sleep</span> 60</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure><p>然后设置执行权限并添加到系统启动项：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /usr/local/bin/vpn-watchdog.sh</span><br><span class="line"><span class="built_in">sudo</span> crontab -e</span><br></pre></td></tr></table></figure><p>添加以下行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@reboot /usr/local/bin/vpn-watchdog.sh &amp;</span><br></pre></td></tr></table></figure><h3 id="使用NetworkManager管理VPN"><a href="#使用NetworkManager管理VPN" class="headerlink" title="使用NetworkManager管理VPN"></a>使用NetworkManager管理VPN</h3><p>如果你更喜欢图形界面，可以安装NetworkManager的StrongSwan插件：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install network-manager-strongswan network-manager-strongswan-gnome</span><br></pre></td></tr></table></figure><p>安装后，你可以在网络设置中添加新的VPN连接，选择”IPsec&#x2F;IKEv2 (strongswan)”类型。</p><h2 id="9-总结：征服技术的喜悦"><a href="#9-总结：征服技术的喜悦" class="headerlink" title="9. 总结：征服技术的喜悦"></a>9. 总结：征服技术的喜悦</h2><p>通过以上步骤，你应该已经成功在Ubuntu系统中配置并连接了IKEv2 VPN。StrongSwan虽然配置起来不像图形界面那样直观，但它提供了强大的功能和稳定的连接，非常适合需要长时间保持VPN连接的场景。</p><p>记得我第一次成功配置StrongSwan时，那种成就感让我整晚都睡不着觉。技术的魅力正在于此——通过自己的努力解决问题，然后享受胜利的喜悦。希望这篇教程能为你省去一些弯路，让你更快地享受到这种喜悦！</p><p>如果你有任何问题或特殊情况，欢迎在评论区留言交流。我们一起进步，一起成长！</p><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://wiki.strongswan.org/projects/strongswan/wiki/UserDocumentation">StrongSwan官方文档</a></li><li><a href="https://jachinshen.github.io/environment/2018/09/26/Linux%E4%B8%ADIKEv2%E6%96%B9%E5%BC%8FEAP%E8%BF%9E%E6%8E%A5VPN.html">Linux 中使用 IKEv2 方式连接 VPN</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;拯救上班族：Ubuntu下IKEv2连接VPN完全指南&quot;&gt;&lt;a href=&quot;#拯救上班族：Ubuntu下IKEv2连接VPN完全指南&quot; class=&quot;headerlink&quot; title=&quot;拯救上班族：Ubuntu下IKEv2连接VPN完全指南&quot;&gt;&lt;/a&gt;拯救上班族</summary>
+      
+    
+    
+    
+    <category term="技术教程" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Ubuntu" scheme="http://example.com/tags/Ubuntu/"/>
+    
+    <category term="VPN" scheme="http://example.com/tags/VPN/"/>
+    
+    <category term="IKEv2" scheme="http://example.com/tags/IKEv2/"/>
+    
+    <category term="StrongSwan" scheme="http://example.com/tags/StrongSwan/"/>
+    
+    <category term="网络安全" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LangChain：构建智能应用的全栈框架</title>
+    <link href="http://example.com/2024/03/20/langchain-guide/"/>
+    <id>http://example.com/2024/03/20/langchain-guide/</id>
+    <published>2024-03-19T16:00:00.000Z</published>
+    <updated>2025-02-28T23:46:05.523Z</updated>
+    
+    <content type="html"><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[文章内容与langchain.md相同，但已移动到正确位置] &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+    
+    <category term="RAG" scheme="http://example.com/tags/RAG/"/>
+    
+    <category term="应用开发" scheme="http://example.com/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="工具集成" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90/"/>
+    
+    <category term="数据处理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+    <category term="多模态Agent" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E6%80%81Agent/"/>
+    
+    <category term="工作流编排" scheme="http://example.com/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%BC%96%E6%8E%92/"/>
+    
+    <category term="知识库增强" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93%E5%A2%9E%E5%BC%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LlamaFactory：高效的LLM微调工具链</title>
+    <link href="http://example.com/2024/03/20/llamafactory-guide/"/>
+    <id>http://example.com/2024/03/20/llamafactory-guide/</id>
+    <published>2024-03-19T16:00:00.000Z</published>
+    <updated>2025-02-28T23:46:02.454Z</updated>
+    
+    <content type="html"><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[文章内容与llamafactory.md相同，但已移动到正确位置] &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+    
+    <category term="微调策略" scheme="http://example.com/tags/%E5%BE%AE%E8%B0%83%E7%AD%96%E7%95%A5/"/>
+    
+    <category term="LoRA/QLoRA" scheme="http://example.com/tags/LoRA-QLoRA/"/>
+    
+    <category term="参数优化" scheme="http://example.com/tags/%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/"/>
+    
+    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    
+    <category term="低资源训练" scheme="http://example.com/tags/%E4%BD%8E%E8%B5%84%E6%BA%90%E8%AE%AD%E7%BB%83/"/>
+    
+    <category term="模型适配" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E9%80%82%E9%85%8D/"/>
+    
+    <category term="全流程工具链" scheme="http://example.com/tags/%E5%85%A8%E6%B5%81%E7%A8%8B%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ollama：轻量级本地LLM部署与管理工具</title>
+    <link href="http://example.com/2024/03/20/ollama-guide/"/>
+    <id>http://example.com/2024/03/20/ollama-guide/</id>
+    <published>2024-03-19T16:00:00.000Z</published>
+    <updated>2025-02-28T23:45:52.560Z</updated>
+    
+    <content type="html"><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[文章内容与ollama.md相同，但已移动到正确位置] &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+    
+    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    
+    <category term="本地模型部署" scheme="http://example.com/tags/%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="轻量化推理" scheme="http://example.com/tags/%E8%BD%BB%E9%87%8F%E5%8C%96%E6%8E%A8%E7%90%86/"/>
+    
+    <category term="模型管理" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="私有化部署" scheme="http://example.com/tags/%E7%A7%81%E6%9C%89%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="多模型支持" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E5%9E%8B%E6%94%AF%E6%8C%81/"/>
+    
+    <category term="开发者工具" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xinference：高性能分布式LLM推理框架</title>
+    <link href="http://example.com/2024/03/20/xinference-guide/"/>
+    <id>http://example.com/2024/03/20/xinference-guide/</id>
+    <published>2024-03-19T16:00:00.000Z</published>
+    <updated>2025-02-28T23:45:58.350Z</updated>
+    
+    <content type="html"><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[文章内容与xinference.md相同，但已移动到正确位置] &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+    
+    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    
+    <category term="分布式部署" scheme="http://example.com/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="推理加速" scheme="http://example.com/tags/%E6%8E%A8%E7%90%86%E5%8A%A0%E9%80%9F/"/>
+    
+    <category term="生产级服务" scheme="http://example.com/tags/%E7%94%9F%E4%BA%A7%E7%BA%A7%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="多GPU支持" scheme="http://example.com/tags/%E5%A4%9AGPU%E6%94%AF%E6%8C%81/"/>
+    
+    <category term="模型托管" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E6%89%98%E7%AE%A1/"/>
+    
+    <category term="性能优化" scheme="http://example.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI 在企业中的落地实践：从概念到实现</title>
+    <link href="http://example.com/2024/02/28/ai-business-applications/"/>
+    <id>http://example.com/2024/02/28/ai-business-applications/</id>
+    <published>2024-02-28T03:00:00.000Z</published>
+    <updated>2025-02-28T08:02:51.021Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>随着 AI 技术的成熟，越来越多的企业开始探索 AI 落地应用。本文将分享一些成功的企业 AI 应用案例和实施策略。</p><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><h3 id="1-智能客服"><a href="#1-智能客服" class="headerlink" title="1. 智能客服"></a>1. 智能客服</h3><ul><li>多轮对话管理</li><li>情感识别</li><li>知识库集成</li><li>人机协作模式</li></ul><h3 id="2-内容生成"><a href="#2-内容生成" class="headerlink" title="2. 内容生成"></a>2. 内容生成</h3><ul><li>产品描述</li><li>营销文案</li><li>技术文档</li><li>多语言本地化</li></ul><h3 id="3-数据分析"><a href="#3-数据分析" class="headerlink" title="3. 数据分析"></a>3. 数据分析</h3><ul><li>市场趋势预测</li><li>用户行为分析</li><li>风险评估</li><li>决策支持</li></ul><h2 id="实施路径"><a href="#实施路径" class="headerlink" title="实施路径"></a>实施路径</h2><ol><li><p><strong>需求评估</strong></p><ul><li>业务痛点识别</li><li>可行性分析</li><li>ROI 评估</li></ul></li><li><p><strong>技术选型</strong></p><ul><li>开源 vs 商业</li><li>本地部署 vs 云服务</li><li>成本效益分析</li></ul></li><li><p><strong>落地策略</strong></p><ul><li>试点项目</li><li>迭代优化</li><li>规模化部署</li></ul></li></ol><h2 id="成功案例"><a href="#成功案例" class="headerlink" title="成功案例"></a>成功案例</h2><h3 id="案例一：电商智能客服升级"><a href="#案例一：电商智能客服升级" class="headerlink" title="案例一：电商智能客服升级"></a>案例一：电商智能客服升级</h3><ul><li>实现背景</li><li>解决方案</li><li>效果评估</li><li>经验总结</li></ul><h3 id="案例二：金融风控优化"><a href="#案例二：金融风控优化" class="headerlink" title="案例二：金融风控优化"></a>案例二：金融风控优化</h3><ul><li>技术架构</li><li>实施过程</li><li>收益分析</li><li>未来规划</li></ul><h2 id="挑战与对策"><a href="#挑战与对策" class="headerlink" title="挑战与对策"></a>挑战与对策</h2><ol><li>数据安全</li><li>成本控制</li><li>人才储备</li><li>技术演进</li></ol><h2 id="未来展望"><a href="#未来展望" class="headerlink" title="未来展望"></a>未来展望</h2><ul><li>技术趋势</li><li>应用方向</li><li>发展建议</li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>AI 落地是一个循序渐进的过程，需要技术和业务的深度融合。 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;随着 AI 技术的成熟，越来越多的企业开始探索 AI 落地应用。本文将分享一些成功的企业 AI 应用案例和实施策略。&lt;/p&gt;
+&lt;h2 id=</summary>
+      
+    
+    
+    
+    <category term="行业应用" scheme="http://example.com/categories/%E8%A1%8C%E4%B8%9A%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="企业应用" scheme="http://example.com/tags/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8/"/>
+    
+    <category term="AI落地" scheme="http://example.com/tags/AI%E8%90%BD%E5%9C%B0/"/>
+    
+    <category term="商业价值" scheme="http://example.com/tags/%E5%95%86%E4%B8%9A%E4%BB%B7%E5%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>提示词工程（Prompt Engineering）进阶指南</title>
+    <link href="http://example.com/2024/02/28/prompt-engineering-deep-dive/"/>
+    <id>http://example.com/2024/02/28/prompt-engineering-deep-dive/</id>
+    <published>2024-02-28T02:45:00.000Z</published>
+    <updated>2025-02-28T08:02:39.572Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>提示词工程（Prompt Engineering）是充分发挥 LLM 能力的关键。本文将深入探讨高级提示词技术和策略。</p><h2 id="提示词的艺术"><a href="#提示词的艺术" class="headerlink" title="提示词的艺术"></a>提示词的艺术</h2><h3 id="1-结构化提示"><a href="#1-结构化提示" class="headerlink" title="1. 结构化提示"></a>1. 结构化提示</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">角色：&#123;role&#125;</span><br><span class="line">背景：&#123;context&#125;</span><br><span class="line">任务：&#123;task&#125;</span><br><span class="line">格式：&#123;format&#125;</span><br><span class="line">约束：&#123;constraints&#125;</span><br></pre></td></tr></table></figure><h3 id="2-链式思考（Chain-of-Thought）"><a href="#2-链式思考（Chain-of-Thought）" class="headerlink" title="2. 链式思考（Chain-of-Thought）"></a>2. 链式思考（Chain-of-Thought）</h3><ul><li>步骤分解</li><li>推理过程</li><li>结果验证</li></ul><h2 id="高级技巧"><a href="#高级技巧" class="headerlink" title="高级技巧"></a>高级技巧</h2><h3 id="1-Few-shot-Learning"><a href="#1-Few-shot-Learning" class="headerlink" title="1. Few-shot Learning"></a>1. Few-shot Learning</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">示例1：</span><br><span class="line">输入：...</span><br><span class="line">输出：...</span><br><span class="line"></span><br><span class="line">示例2：</span><br><span class="line">输入：...</span><br><span class="line">输出：...</span><br><span class="line"></span><br><span class="line">现在：</span><br><span class="line">输入：...</span><br></pre></td></tr></table></figure><h3 id="2-自我一致性"><a href="#2-自我一致性" class="headerlink" title="2. 自我一致性"></a>2. 自我一致性</h3><ul><li>多样化提示</li><li>结果投票</li><li>置信度评估</li></ul><h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ol><li><p><strong>代码生成</strong></p><ul><li>需求分析</li><li>测试用例</li><li>文档生成</li></ul></li><li><p><strong>文本优化</strong></p><ul><li>风格转换</li><li>内容扩写</li><li>多语言翻译</li></ul></li></ol><h2 id="常见陷阱"><a href="#常见陷阱" class="headerlink" title="常见陷阱"></a>常见陷阱</h2><ol><li>提示词过于复杂</li><li>上下文不足</li><li>指令不明确</li></ol><h2 id="优化建议"><a href="#优化建议" class="headerlink" title="优化建议"></a>优化建议</h2><ul><li>使用清晰的指令</li><li>提供充分上下文</li><li>设置合理约束</li><li>增加示例说明</li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>掌握提示词工程是 AI 开发的必备技能，持续实践和优化是提高效果的关键。 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;提示词工程（Prompt Engineering）是充分发挥 LLM 能力的关键。本文将深入探讨高级提示词技术和策略。&lt;/p&gt;
+&lt;h2 id</summary>
+      
+    
+    
+    
+    <category term="技术深度" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF%E6%B7%B1%E5%BA%A6/"/>
+    
+    
+    <category term="Prompt Engineering" scheme="http://example.com/tags/Prompt-Engineering/"/>
+    
+    <category term="AI优化" scheme="http://example.com/tags/AI%E4%BC%98%E5%8C%96/"/>
+    
+    <category term="最佳实践" scheme="http://example.com/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手教你使用 LangChain 构建 AI 应用</title>
+    <link href="http://example.com/2024/02/28/llm-practical-guide/"/>
+    <id>http://example.com/2024/02/28/llm-practical-guide/</id>
+    <published>2024-02-28T02:30:00.000Z</published>
+    <updated>2025-02-28T08:17:55.441Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>LangChain 已经成为构建 LLM 应用的首选框架之一。本文将通过实例讲解如何使用 LangChain 快速构建一个智能问答系统。</p><h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install langchain openai chromadb</span><br></pre></td></tr></table></figure><h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ol><li><p><strong>Chain</strong></p><ul><li>LLMChain</li><li>SimpleSequentialChain</li><li>RouterChain</li></ul></li><li><p><strong>Memory</strong></p><ul><li>ConversationBufferMemory</li><li>ConversationSummaryMemory</li></ul></li></ol><h2 id="实战示例"><a href="#实战示例" class="headerlink" title="实战示例"></a>实战示例</h2><h3 id="1-基础配置"><a href="#1-基础配置" class="headerlink" title="1. 基础配置"></a>1. 基础配置</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain.llms <span class="keyword">import</span> OpenAI</span><br><span class="line"><span class="keyword">from</span> langchain.chains <span class="keyword">import</span> LLMChain</span><br><span class="line"><span class="keyword">from</span> langchain.prompts <span class="keyword">import</span> PromptTemplate</span><br><span class="line"></span><br><span class="line">llm = OpenAI(temperature=<span class="number">0.7</span>)</span><br></pre></td></tr></table></figure><h3 id="2-创建提示模板"><a href="#2-创建提示模板" class="headerlink" title="2. 创建提示模板"></a>2. 创建提示模板</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">prompt = PromptTemplate(</span><br><span class="line">    input_variables=[<span class="string">&quot;question&quot;</span>],</span><br><span class="line">    template=<span class="string">&quot;请回答以下问题：&#123;question&#125;&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure><h3 id="3-构建问答链"><a href="#3-构建问答链" class="headerlink" title="3. 构建问答链"></a>3. 构建问答链</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chain = LLMChain(</span><br><span class="line">    llm=llm,</span><br><span class="line">    prompt=prompt</span><br><span class="line">)</span><br></pre></td></tr></table></figure><h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a>进阶功能</h2><ol><li><strong>向量数据库集成</strong></li><li><strong>多轮对话管理</strong></li><li><strong>文档问答实现</strong></li></ol><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li>提示词工程技巧</li><li>错误处理机制</li><li>性能优化建议</li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过本文的学习，相信你已经掌握了使用 LangChain 构建 AI 应用的基础知识。 </p>]]></content>
+    
+    
+    <summary type="html">通过实例讲解，带你掌握 LangChain 框架，快速构建智能问答系统。从环境搭建到高级应用，全方位提升你的 AI 开发技能。</summary>
+    
+    
+    
+    <category term="实战教程" scheme="http://example.com/categories/%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="LangChain" scheme="http://example.com/tags/LangChain/"/>
+    
+    <category term="Python" scheme="http://example.com/tags/Python/"/>
+    
+    <category term="AI应用开发" scheme="http://example.com/tags/AI%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大语言模型（LLM）的发展历程与未来展望</title>
+    <link href="http://example.com/2024/02/28/llm-development-overview/"/>
+    <id>http://example.com/2024/02/28/llm-development-overview/</id>
+    <published>2024-02-28T02:15:00.000Z</published>
+    <updated>2025-02-28T08:17:51.364Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>大语言模型（Large Language Models，LLM）已经成为人工智能领域最炙手可热的研究方向。从 GPT-3 到 Claude，从 LLaMA 到 Gemini，大语言模型的发展日新月异。本文将带您深入了解 LLM 的发展历程、现状与未来趋势。</p><h2 id="LLM-的发展里程碑"><a href="#LLM-的发展里程碑" class="headerlink" title="LLM 的发展里程碑"></a>LLM 的发展里程碑</h2><h3 id="1-早期基础（2017-2019）"><a href="#1-早期基础（2017-2019）" class="headerlink" title="1. 早期基础（2017-2019）"></a>1. 早期基础（2017-2019）</h3><ul><li>Transformer 架构的提出</li><li>BERT 的突破性进展</li><li>GPT-2 的初步成功</li></ul><h3 id="2-规模化时代（2020-2022）"><a href="#2-规模化时代（2020-2022）" class="headerlink" title="2. 规模化时代（2020-2022）"></a>2. 规模化时代（2020-2022）</h3><ul><li>GPT-3 带来的范式转变</li><li>Few-shot learning 的兴起</li><li>开源模型的蓬勃发展</li></ul><h3 id="3-多模态融合（2023-至今）"><a href="#3-多模态融合（2023-至今）" class="headerlink" title="3. 多模态融合（2023-至今）"></a>3. 多模态融合（2023-至今）</h3><ul><li>GPT-4 的多模态能力</li><li>Claude 的安全性突破</li><li>Gemini Ultra 的综合能力</li></ul><h2 id="LLM-的核心技术"><a href="#LLM-的核心技术" class="headerlink" title="LLM 的核心技术"></a>LLM 的核心技术</h2><ol><li><p><strong>预训练技术</strong></p><ul><li>自监督学习</li><li>海量数据处理</li><li>计算资源优化</li></ul></li><li><p><strong>微调方法</strong></p><ul><li>RLHF（基于人类反馈的强化学习）</li><li>LoRA（低秩适应）</li><li>P-tuning</li></ul></li></ol><h2 id="未来展望"><a href="#未来展望" class="headerlink" title="未来展望"></a>未来展望</h2><ol><li><p><strong>效率提升</strong></p><ul><li>模型压缩技术</li><li>知识蒸馏</li><li>稀疏注意力机制</li></ul></li><li><p><strong>应用拓展</strong></p><ul><li>垂直领域专精</li><li>多模态融合</li><li>个性化定制</li></ul></li></ol><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>LLM 技术的发展仍在加速，未来将在更多领域发挥重要作用。作为技术从业者，我们需要持续关注这一领域的最新进展。 </p>]]></content>
+    
+    
+    <summary type="html">从 GPT-3 到 Gemini，探索大语言模型的演进历程。本文带您深入了解 LLM 技术的发展里程碑、核心技术突破与未来趋势。</summary>
+    
+    
+    
+    <category term="AI技术" scheme="http://example.com/categories/AI%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="LLM" scheme="http://example.com/tags/LLM/"/>
+    
+    <category term="GPT" scheme="http://example.com/tags/GPT/"/>
+    
+    <category term="AI发展" scheme="http://example.com/tags/AI%E5%8F%91%E5%B1%95/"/>
+    
+  </entry>
+  
+</feed>
