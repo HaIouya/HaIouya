@@ -196,6 +196,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Ollama：轻量级本地LLM部署与管理工具</title>
+    <url>/2024/03/20/ollama-guide/</url>
+    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>本地模型部署</tag>
+        <tag>轻量化推理</tag>
+        <tag>模型管理</tag>
+        <tag>私有化部署</tag>
+        <tag>多模型支持</tag>
+        <tag>开发者工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>手把手教你使用 LangChain 构建 AI 应用</title>
     <url>/2024/02/28/llm-practical-guide/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>LangChain 已经成为构建 LLM 应用的首选框架之一。本文将通过实例讲解如何使用 LangChain 快速构建一个智能问答系统。</p>
@@ -241,24 +259,6 @@
         <tag>LangChain</tag>
         <tag>Python</tag>
         <tag>AI应用开发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ollama：轻量级本地LLM部署与管理工具</title>
-    <url>/2024/03/20/ollama-guide/</url>
-    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>本地模型部署</tag>
-        <tag>轻量化推理</tag>
-        <tag>模型管理</tag>
-        <tag>私有化部署</tag>
-        <tag>多模型支持</tag>
-        <tag>开发者工具</tag>
       </tags>
   </entry>
   <entry>
@@ -315,24 +315,6 @@
         <tag>Prompt Engineering</tag>
         <tag>AI优化</tag>
         <tag>最佳实践</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xinference：高性能分布式LLM推理框架</title>
-    <url>/2024/03/20/xinference-guide/</url>
-    <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>分布式部署</tag>
-        <tag>推理加速</tag>
-        <tag>生产级服务</tag>
-        <tag>多GPU支持</tag>
-        <tag>模型托管</tag>
-        <tag>性能优化</tag>
       </tags>
   </entry>
   <entry>
@@ -449,6 +431,24 @@
         <tag>IKEv2</tag>
         <tag>StrongSwan</tag>
         <tag>网络安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xinference：高性能分布式LLM推理框架</title>
+    <url>/2024/03/20/xinference-guide/</url>
+    <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>分布式部署</tag>
+        <tag>推理加速</tag>
+        <tag>生产级服务</tag>
+        <tag>多GPU支持</tag>
+        <tag>模型托管</tag>
+        <tag>性能优化</tag>
       </tags>
   </entry>
 </search>
