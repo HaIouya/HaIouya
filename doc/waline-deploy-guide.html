@@ -1,17 +1,19 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>松子的代码笔记 | 松子的代码笔记</title><meta name="author" content="Songzi"><meta name="copyright" content="Songzi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这个目录存放博客文章使用的图片资源。 图片列表：  llm-overview.jpg - LLM 发展概述文章封面 langchain-guide.jpg - LangChain 教程文章封面 prompt-engineering.jpg - 提示词工程文章封面 ai-business.jpg - AI 企业应用文章封面">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Waline评论系统部署指南 | 松子的代码笔记</title><meta name="author" content="Songzi"><meta name="copyright" content="Songzi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Waline 评论系统部署指南本文将指导您如何从零开始部署 Waline 评论系统，并将其集成到您的 Hexo 博客中。 什么是 Waline？Waline 是一个基于 Valine 衍生的简洁、安全的评论系统，支持 Markdown、表情、通知等功能，并且完全开源免费。与 Valine 不同，Waline 需要服务端部署，但这也带来了更好的数据安全性和功能扩展性。 部署步骤1. 准备工作您需要准">
 <meta property="og:type" content="website">
-<meta property="og:title" content="松子的代码笔记">
-<meta property="og:url" content="http://example.com/images/README.html">
+<meta property="og:title" content="Waline评论系统部署指南">
+<meta property="og:url" content="http://example.com/doc/waline-deploy-guide.html">
 <meta property="og:site_name" content="松子的代码笔记">
-<meta property="og:description" content="这个目录存放博客文章使用的图片资源。 图片列表：  llm-overview.jpg - LLM 发展概述文章封面 langchain-guide.jpg - LangChain 教程文章封面 prompt-engineering.jpg - 提示词工程文章封面 ai-business.jpg - AI 企业应用文章封面">
+<meta property="og:description" content="Waline 评论系统部署指南本文将指导您如何从零开始部署 Waline 评论系统，并将其集成到您的 Hexo 博客中。 什么是 Waline？Waline 是一个基于 Valine 衍生的简洁、安全的评论系统，支持 Markdown、表情、通知等功能，并且完全开源免费。与 Valine 不同，Waline 需要服务端部署，但这也带来了更好的数据安全性和功能扩展性。 部署步骤1. 准备工作您需要准">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/butterfly-icon.png">
-<meta property="article:published_time" content="2025-02-28T08:17:57.893Z">
-<meta property="article:modified_time" content="2025-02-28T08:17:57.893Z">
+<meta property="article:published_time" content="2024-01-01T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-01T04:00:00.000Z">
 <meta property="article:author" content="Songzi">
-<meta property="article:tag" content="编程,技术博客,开发笔记,个人博客">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="Waline">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/images/README.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/doc/waline-deploy-guide.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
     (() => {
       
     const saveToLocal = {
@@ -140,7 +142,7 @@
   },
   autoDarkmode: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '松子的代码笔记',
+  title: 'Waline评论系统部署指南',
   isHighlightShrink: false,
   isToc: false,
   pageType: 'page'
@@ -153,14 +155,68 @@ btf.addGlobalFn('pjaxSend', () => {
   Pace.restart()
 }, 'pace_restart')
 
-</script><link rel="stylesheet" href="/css/loading.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">松子的代码笔记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title"></h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><p>这个目录存放博客文章使用的图片资源。</p>
-<p>图片列表：</p>
+</script><link rel="stylesheet" href="/css/loading.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">松子的代码笔记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">Waline评论系统部署指南</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="Waline-评论系统部署指南"><a href="#Waline-评论系统部署指南" class="headerlink" title="Waline 评论系统部署指南"></a>Waline 评论系统部署指南</h1><p>本文将指导您如何从零开始部署 Waline 评论系统，并将其集成到您的 Hexo 博客中。</p>
+<h2 id="什么是-Waline？"><a href="#什么是-Waline？" class="headerlink" title="什么是 Waline？"></a>什么是 Waline？</h2><p>Waline 是一个基于 Valine 衍生的简洁、安全的评论系统，支持 Markdown、表情、通知等功能，并且完全开源免费。与 Valine 不同，Waline 需要服务端部署，但这也带来了更好的数据安全性和功能扩展性。</p>
+<h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>您需要准备以下内容：</p>
 <ul>
-<li>llm-overview.jpg - LLM 发展概述文章封面</li>
-<li>langchain-guide.jpg - LangChain 教程文章封面</li>
-<li>prompt-engineering.jpg - 提示词工程文章封面</li>
-<li>ai-business.jpg - AI 企业应用文章封面</li>
+<li>一个 GitHub 账号</li>
+<li>一个 Vercel 账号（可以直接用 GitHub 账号登录）</li>
+<li>一个数据库（LeanCloud、MongoDB、MySQL、PostgreSQL、SQLite 或 GitHub）</li>
 </ul>
+<h3 id="2-部署-Waline-到-Vercel"><a href="#2-部署-Waline-到-Vercel" class="headerlink" title="2. 部署 Waline 到 Vercel"></a>2. 部署 Waline 到 Vercel</h3><ol>
+<li>访问 <a target="_blank" rel="noopener" href="https://github.com/walinejs/waline">Waline 官方仓库</a></li>
+<li>点击 “Deploy with Vercel” 按钮</li>
+<li>使用 GitHub 账号登录 Vercel</li>
+<li>为您的项目设置一个名称，然后点击 “Deploy”</li>
+<li>部署完成后，Vercel 会为您的 Waline 服务生成一个域名，如 <code>https://your-project-name.vercel.app</code></li>
+</ol>
+<h3 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3. 配置环境变量"></a>3. 配置环境变量</h3><p>在 Vercel 的项目设置中，添加以下环境变量：</p>
+<h4 id="使用-LeanCloud-作为数据库（推荐新手使用）"><a href="#使用-LeanCloud-作为数据库（推荐新手使用）" class="headerlink" title="使用 LeanCloud 作为数据库（推荐新手使用）"></a>使用 LeanCloud 作为数据库（推荐新手使用）</h4><ol>
+<li>注册并登录 <a target="_blank" rel="noopener" href="https://leancloud.app/">LeanCloud 国际版</a></li>
+<li>创建一个应用，进入应用的设置页面</li>
+<li>在应用凭证中获取 <code>APP ID</code>、<code>APP KEY</code> 和 <code>Master Key</code></li>
+<li>在 Vercel 中添加以下环境变量：<ul>
+<li><code>LEAN_ID</code>: 您的 LeanCloud APP ID</li>
+<li><code>LEAN_KEY</code>: 您的 LeanCloud APP KEY</li>
+<li><code>LEAN_MASTER_KEY</code>: 您的 LeanCloud Master Key</li>
+</ul>
+</li>
+</ol>
+<h4 id="使用-MongoDB-作为数据库（适合有经验的用户）"><a href="#使用-MongoDB-作为数据库（适合有经验的用户）" class="headerlink" title="使用 MongoDB 作为数据库（适合有经验的用户）"></a>使用 MongoDB 作为数据库（适合有经验的用户）</h4><ol>
+<li>注册并登录 <a target="_blank" rel="noopener" href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a></li>
+<li>创建一个免费的 Shared Cluster</li>
+<li>在 “Database Access” 中创建一个用户并设置密码</li>
+<li>在 “Network Access” 中添加 IP 地址 <code>0.0.0.0/0</code>（允许所有 IP 访问）</li>
+<li>获取连接字符串，格式为 <code>mongodb+srv://&lt;username&gt;:&lt;password&gt;@&lt;cluster-url&gt;/&lt;database-name&gt;</code></li>
+<li>在 Vercel 中添加环境变量：<ul>
+<li><code>MONGODB_URI</code>: 您的 MongoDB 连接字符串</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-添加评论管理员"><a href="#4-添加评论管理员" class="headerlink" title="4. 添加评论管理员"></a>4. 添加评论管理员</h3><ol>
+<li>在 Vercel 环境变量中添加：<ul>
+<li><code>ADMIN_EMAIL</code>: 管理员邮箱，可以添加多个，用逗号分隔</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-配置邮件通知（可选）"><a href="#5-配置邮件通知（可选）" class="headerlink" title="5. 配置邮件通知（可选）"></a>5. 配置邮件通知（可选）</h3><p>如果需要评论通知功能，可以配置以下环境变量：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SMTP_SERVICE=</span><br><span class="line">SMTP_HOST=</span><br><span class="line">SMTP_PORT=</span><br><span class="line">SMTP_USER=</span><br><span class="line">SMTP_PASS=</span><br><span class="line">SENDER_NAME=</span><br><span class="line">SENDER_EMAIL=</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-在博客中集成-Waline"><a href="#6-在博客中集成-Waline" class="headerlink" title="6. 在博客中集成 Waline"></a>6. 在博客中集成 Waline</h3><ol>
+<li>在 Hexo 主题的配置文件中设置 Waline：</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">waline:</span></span><br><span class="line">  <span class="attr">serverURL:</span> <span class="string">https://your-project-name.vercel.app</span></span><br><span class="line">  <span class="attr">login:</span> <span class="string">&#x27;enable&#x27;</span></span><br><span class="line">  <span class="attr">meta:</span> [<span class="string">&#x27;nick&#x27;</span>, <span class="string">&#x27;mail&#x27;</span>, <span class="string">&#x27;link&#x27;</span>]</span><br><span class="line">  <span class="attr">requiredMeta:</span> [<span class="string">&#x27;nick&#x27;</span>, <span class="string">&#x27;mail&#x27;</span>]</span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">&#x27;zh-CN&#x27;</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">&#x27;请留下您的评论~&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>确保相关 JavaScript 和 CSS 文件已正确引入</li>
+</ol>
+<h2 id="使用与管理"><a href="#使用与管理" class="headerlink" title="使用与管理"></a>使用与管理</h2><h3 id="评论管理"><a href="#评论管理" class="headerlink" title="评论管理"></a>评论管理</h3><p>访问 <code>https://your-project-name.vercel.app/ui/register</code> 注册管理员账号（使用配置的管理员邮箱）。<br>登录后，可以在 <code>https://your-project-name.vercel.app/ui</code> 管理所有评论。</p>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><h4 id="Q-评论无法显示怎么办？"><a href="#Q-评论无法显示怎么办？" class="headerlink" title="Q: 评论无法显示怎么办？"></a>Q: 评论无法显示怎么办？</h4><p>A: 检查浏览器控制台是否有错误信息。确认 serverURL 设置正确，并且 Waline 服务正常运行。</p>
+<h4 id="Q-如何自定义评论样式？"><a href="#Q-如何自定义评论样式？" class="headerlink" title="Q: 如何自定义评论样式？"></a>Q: 如何自定义评论样式？</h4><p>A: 可以通过在博客中添加自定义 CSS 来修改 Waline 的样式。</p>
+<h4 id="Q-评论数据安全吗？"><a href="#Q-评论数据安全吗？" class="headerlink" title="Q: 评论数据安全吗？"></a>Q: 评论数据安全吗？</h4><p>A: Waline 的数据存储在您自己控制的数据库中，比第三方服务更安全。建议定期备份数据库。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>现在，您的博客应该已经成功集成了 Waline 评论系统。如果遇到任何问题，可以查阅 <a target="_blank" rel="noopener" href="https://waline.js.org/">Waline 官方文档</a> 或在评论区留言。</p>
+<hr>
+<p>希望这个教程对您有所帮助！如果您有任何问题或建议，欢迎在下方评论区留言。 </p>
 </div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Songzi</div><div class="author-info-description">分享编程技术、学习心得和个人成长</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yourusername"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/02/28/hello-world/" title="Hello World"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2025/02/28/hello-world/" title="Hello World">Hello World</a><time datetime="2025-02-28T07:52:30.615Z" title="发表于 2025-02-28 15:52:30">2025-02-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/05/19/ubuntu-ikev2-vpn-tutorial/" title="拯救上班族：Ubuntu下IKEv2连接VPN完全指南"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="拯救上班族：Ubuntu下IKEv2连接VPN完全指南"/></a><div class="content"><a class="title" href="/2024/05/19/ubuntu-ikev2-vpn-tutorial/" title="拯救上班族：Ubuntu下IKEv2连接VPN完全指南">拯救上班族：Ubuntu下IKEv2连接VPN完全指南</a><time datetime="2024-05-19T07:30:00.000Z" title="发表于 2024-05-19 15:30:00">2024-05-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/20/llamafactory-guide/" title="LlamaFactory：高效的LLM微调工具链"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LlamaFactory：高效的LLM微调工具链"/></a><div class="content"><a class="title" href="/2024/03/20/llamafactory-guide/" title="LlamaFactory：高效的LLM微调工具链">LlamaFactory：高效的LLM微调工具链</a><time datetime="2024-03-19T16:00:00.000Z" title="发表于 2024-03-20 00:00:00">2024-03-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/20/ollama-guide/" title="Ollama：轻量级本地LLM部署与管理工具"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ollama：轻量级本地LLM部署与管理工具"/></a><div class="content"><a class="title" href="/2024/03/20/ollama-guide/" title="Ollama：轻量级本地LLM部署与管理工具">Ollama：轻量级本地LLM部署与管理工具</a><time datetime="2024-03-19T16:00:00.000Z" title="发表于 2024-03-20 00:00:00">2024-03-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/20/langchain-guide/" title="LangChain：构建智能应用的全栈框架"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LangChain：构建智能应用的全栈框架"/></a><div class="content"><a class="title" href="/2024/03/20/langchain-guide/" title="LangChain：构建智能应用的全栈框架">LangChain：构建智能应用的全栈框架</a><time datetime="2024-03-19T16:00:00.000Z" title="发表于 2024-03-20 00:00:00">2024-03-20</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>

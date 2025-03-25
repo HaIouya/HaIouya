@@ -1,0 +1,209 @@
+.comment-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-left: 4px solid #6495ed;
+  padding-left: 0.8rem;
+}
+
+.comment-title i {
+  margin-right: 8px;
+  color: #6495ed;
+}
+
+#waline-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+#waline-container:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.waline-comment-count {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 10px;
+  vertical-align: middle;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.waline-comment-count:hover {
+  opacity: 1;
+}
+
+.waline-comment-count i {
+  margin-right: 4px;
+  color: #6495ed;
+}
+
+/* 评论编辑器样式 */
+.wl-editor {
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0 !important;
+  min-height: 120px !important;
+}
+
+.wl-editor:focus {
+  border-color: #6495ed !important;
+  box-shadow: 0 0 8px rgba(100, 149, 237, 0.5) !important;
+}
+
+/* 评论工具栏 */
+.wl-panel {
+  border-radius: 0 0 8px 8px !important;
+  background-color: #f9f9f9 !important;
+}
+
+/* 提交按钮样式 */
+.wl-btn {
+  background-color: #6495ed !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+}
+
+.wl-btn:hover {
+  background-color: #5a86d8 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(90, 134, 216, 0.3);
+}
+
+/* 评论内容样式 */
+.wl-comment {
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.wl-comment:hover {
+  background-color: rgba(249, 249, 249, 0.8);
+}
+
+.wl-user {
+  font-weight: bold;
+}
+
+.wl-user img {
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wl-meta {
+  font-size: 0.85rem;
+}
+
+.wl-content {
+  margin: 0.8rem 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* 评论加载动画 */
+.wl-loading {
+  color: #6495ed !important;
+}
+
+/* 表情选择面板 */
+.wl-emoji-popup {
+  border-radius: 8px !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.wl-emoji {
+  transition: all 0.2s ease;
+}
+
+.wl-emoji:hover {
+  transform: scale(1.2);
+}
+
+/* 回复按钮 */
+.wl-comment .wl-action {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.wl-comment:hover .wl-action {
+  opacity: 1;
+}
+
+/* 评论分页 */
+.wl-page {
+  margin-top: 1rem;
+}
+
+.wl-page button {
+  border-radius: 4px !important;
+  transition: all 0.3s ease;
+}
+
+.wl-page button:hover:not(:disabled) {
+  background-color: #f0f0f0 !important;
+}
+
+.wl-page button.active {
+  background-color: #6495ed !important;
+  color: white !important;
+}
+
+/* 暗黑模式适配 */
+@media (prefers-color-scheme: dark) {
+  .comment-title {
+    color: #e0e0e0;
+  }
+  
+  #waline-container {
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wl-editor {
+    border-color: #444 !important;
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+  }
+  
+  .wl-panel {
+    background-color: #333 !important;
+  }
+  
+  .wl-btn {
+    background-color: #5a86d8 !important;
+  }
+  
+  .wl-btn:hover {
+    background-color: #4a76c8 !important;
+  }
+  
+  .wl-comment:hover {
+    background-color: rgba(40, 40, 40, 0.8);
+  }
+  
+  .wl-meta, .wl-content {
+    color: #ccc !important;
+  }
+  
+  .wl-card {
+    background-color: #2a2a2a !important;
+  }
+  
+  .wl-page button {
+    background-color: #333 !important;
+    color: #ccc !important;
+  }
+  
+  .wl-page button:hover:not(:disabled) {
+    background-color: #444 !important;
+  }
+} 

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/02/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>AI 在企业中的落地实践：从概念到实现</title>
     <url>/2024/02/28/ai-business-applications/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>随着 AI 技术的成熟，越来越多的企业开始探索 AI 落地应用。本文将分享一些成功的企业 AI 应用案例和实施策略。</p>
@@ -80,60 +98,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/02/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>LangChain：构建智能应用的全栈框架</title>
-    <url>/2024/03/20/langchain-guide/</url>
-    <content><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>应用开发</tag>
-        <tag>工具集成</tag>
-        <tag>数据处理</tag>
-        <tag>多模态Agent</tag>
-        <tag>工作流编排</tag>
-        <tag>知识库增强</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LlamaFactory：高效的LLM微调工具链</title>
-    <url>/2024/03/20/llamafactory-guide/</url>
-    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>微调策略</tag>
-        <tag>LoRA/QLoRA</tag>
-        <tag>参数优化</tag>
-        <tag>开源框架</tag>
-        <tag>低资源训练</tag>
-        <tag>模型适配</tag>
-        <tag>全流程工具链</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大语言模型（LLM）的发展历程与未来展望</title>
     <url>/2024/02/28/llm-development-overview/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>大语言模型（Large Language Models，LLM）已经成为人工智能领域最炙手可热的研究方向。从 GPT-3 到 Claude，从 LLaMA 到 Gemini，大语言模型的发展日新月异。本文将带您深入了解 LLM 的发展历程、现状与未来趋势。</p>
@@ -193,24 +157,6 @@
         <tag>LLM</tag>
         <tag>GPT</tag>
         <tag>AI发展</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ollama：轻量级本地LLM部署与管理工具</title>
-    <url>/2024/03/20/ollama-guide/</url>
-    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>本地模型部署</tag>
-        <tag>轻量化推理</tag>
-        <tag>模型管理</tag>
-        <tag>私有化部署</tag>
-        <tag>多模型支持</tag>
-        <tag>开发者工具</tag>
       </tags>
   </entry>
   <entry>
@@ -315,6 +261,78 @@
         <tag>Prompt Engineering</tag>
         <tag>AI优化</tag>
         <tag>最佳实践</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LlamaFactory：高效的LLM微调工具链</title>
+    <url>/2024/03/20/llamafactory-guide/</url>
+    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>微调策略</tag>
+        <tag>LoRA/QLoRA</tag>
+        <tag>参数优化</tag>
+        <tag>开源框架</tag>
+        <tag>低资源训练</tag>
+        <tag>模型适配</tag>
+        <tag>全流程工具链</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ollama：轻量级本地LLM部署与管理工具</title>
+    <url>/2024/03/20/ollama-guide/</url>
+    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>本地模型部署</tag>
+        <tag>轻量化推理</tag>
+        <tag>模型管理</tag>
+        <tag>私有化部署</tag>
+        <tag>多模型支持</tag>
+        <tag>开发者工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LangChain：构建智能应用的全栈框架</title>
+    <url>/2024/03/20/langchain-guide/</url>
+    <content><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>应用开发</tag>
+        <tag>工具集成</tag>
+        <tag>数据处理</tag>
+        <tag>多模态Agent</tag>
+        <tag>工作流编排</tag>
+        <tag>知识库增强</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xinference：高性能分布式LLM推理框架</title>
+    <url>/2024/03/20/xinference-guide/</url>
+    <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>分布式部署</tag>
+        <tag>推理加速</tag>
+        <tag>生产级服务</tag>
+        <tag>多GPU支持</tag>
+        <tag>模型托管</tag>
+        <tag>性能优化</tag>
       </tags>
   </entry>
   <entry>
@@ -431,24 +449,6 @@
         <tag>IKEv2</tag>
         <tag>StrongSwan</tag>
         <tag>网络安全</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xinference：高性能分布式LLM推理框架</title>
-    <url>/2024/03/20/xinference-guide/</url>
-    <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>分布式部署</tag>
-        <tag>推理加速</tag>
-        <tag>生产级服务</tag>
-        <tag>多GPU支持</tag>
-        <tag>模型托管</tag>
-        <tag>性能优化</tag>
       </tags>
   </entry>
 </search>
