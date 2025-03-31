@@ -69,18 +69,18 @@
   </entry>
   
   <entry>
-    <title>Ollama：轻量级本地LLM部署与管理工具</title>
-    <link href="http://example.com/2024/03/20/ollama-guide/"/>
-    <id>http://example.com/2024/03/20/ollama-guide/</id>
+    <title>LangChain：构建智能应用的全栈框架</title>
+    <link href="http://example.com/2024/03/20/langchain-guide/"/>
+    <id>http://example.com/2024/03/20/langchain-guide/</id>
     <published>2024-03-19T16:00:00.000Z</published>
-    <updated>2025-02-28T23:45:52.560Z</updated>
+    <updated>2025-02-28T23:46:05.523Z</updated>
     
-    <content type="html"><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>]]></content>
+    <content type="html"><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;[文章内容与ollama.md相同，但已移动到正确位置] &lt;/p&gt;
+    <summary type="html">&lt;p&gt;[文章内容与langchain.md相同，但已移动到正确位置] &lt;/p&gt;
 </summary>
       
     
@@ -89,19 +89,19 @@
     <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
     
     
-    <category term="本地模型部署" scheme="http://example.com/tags/%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/"/>
+    <category term="RAG" scheme="http://example.com/tags/RAG/"/>
     
-    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    <category term="应用开发" scheme="http://example.com/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
     
-    <category term="轻量化推理" scheme="http://example.com/tags/%E8%BD%BB%E9%87%8F%E5%8C%96%E6%8E%A8%E7%90%86/"/>
+    <category term="工具集成" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90/"/>
     
-    <category term="模型管理" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E7%AE%A1%E7%90%86/"/>
+    <category term="数据处理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
-    <category term="私有化部署" scheme="http://example.com/tags/%E7%A7%81%E6%9C%89%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    <category term="多模态Agent" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E6%80%81Agent/"/>
     
-    <category term="多模型支持" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E5%9E%8B%E6%94%AF%E6%8C%81/"/>
+    <category term="工作流编排" scheme="http://example.com/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%BC%96%E6%8E%92/"/>
     
-    <category term="开发者工具" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/"/>
+    <category term="知识库增强" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93%E5%A2%9E%E5%BC%BA/"/>
     
   </entry>
   
@@ -126,19 +126,56 @@
     <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
     
     
-    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
-    
     <category term="微调策略" scheme="http://example.com/tags/%E5%BE%AE%E8%B0%83%E7%AD%96%E7%95%A5/"/>
     
     <category term="LoRA/QLoRA" scheme="http://example.com/tags/LoRA-QLoRA/"/>
     
     <category term="参数优化" scheme="http://example.com/tags/%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/"/>
     
+    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    
     <category term="低资源训练" scheme="http://example.com/tags/%E4%BD%8E%E8%B5%84%E6%BA%90%E8%AE%AD%E7%BB%83/"/>
     
     <category term="模型适配" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E9%80%82%E9%85%8D/"/>
     
     <category term="全流程工具链" scheme="http://example.com/tags/%E5%85%A8%E6%B5%81%E7%A8%8B%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ollama：轻量级本地LLM部署与管理工具</title>
+    <link href="http://example.com/2024/03/20/ollama-guide/"/>
+    <id>http://example.com/2024/03/20/ollama-guide/</id>
+    <published>2024-03-19T16:00:00.000Z</published>
+    <updated>2025-02-28T23:45:52.560Z</updated>
+    
+    <content type="html"><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;[文章内容与ollama.md相同，但已移动到正确位置] &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    
+    
+    <category term="开源框架" scheme="http://example.com/tags/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
+    
+    <category term="本地模型部署" scheme="http://example.com/tags/%E6%9C%AC%E5%9C%B0%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="轻量化推理" scheme="http://example.com/tags/%E8%BD%BB%E9%87%8F%E5%8C%96%E6%8E%A8%E7%90%86/"/>
+    
+    <category term="模型管理" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="私有化部署" scheme="http://example.com/tags/%E7%A7%81%E6%9C%89%E5%8C%96%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="多模型支持" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E5%9E%8B%E6%94%AF%E6%8C%81/"/>
+    
+    <category term="开发者工具" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -176,43 +213,6 @@
     <category term="模型托管" scheme="http://example.com/tags/%E6%A8%A1%E5%9E%8B%E6%89%98%E7%AE%A1/"/>
     
     <category term="性能优化" scheme="http://example.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LangChain：构建智能应用的全栈框架</title>
-    <link href="http://example.com/2024/03/20/langchain-guide/"/>
-    <id>http://example.com/2024/03/20/langchain-guide/</id>
-    <published>2024-03-19T16:00:00.000Z</published>
-    <updated>2025-02-28T23:46:05.523Z</updated>
-    
-    <content type="html"><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;[文章内容与langchain.md相同，但已移动到正确位置] &lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="LLM工具链" scheme="http://example.com/categories/LLM%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
-    
-    
-    <category term="RAG" scheme="http://example.com/tags/RAG/"/>
-    
-    <category term="应用开发" scheme="http://example.com/tags/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="工具集成" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90/"/>
-    
-    <category term="数据处理" scheme="http://example.com/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="多模态Agent" scheme="http://example.com/tags/%E5%A4%9A%E6%A8%A1%E6%80%81Agent/"/>
-    
-    <category term="工作流编排" scheme="http://example.com/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%BC%96%E6%8E%92/"/>
-    
-    <category term="知识库增强" scheme="http://example.com/tags/%E7%9F%A5%E8%AF%86%E5%BA%93%E5%A2%9E%E5%BC%BA/"/>
     
   </entry>
   

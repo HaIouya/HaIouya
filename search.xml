@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/02/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>AI 在企业中的落地实践：从概念到实现</title>
     <url>/2024/02/28/ai-business-applications/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>随着 AI 技术的成熟，越来越多的企业开始探索 AI 落地应用。本文将分享一些成功的企业 AI 应用案例和实施策略。</p>
@@ -98,51 +80,57 @@
       </tags>
   </entry>
   <entry>
-    <title>手把手教你使用 LangChain 构建 AI 应用</title>
-    <url>/2024/02/28/llm-practical-guide/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>LangChain 已经成为构建 LLM 应用的首选框架之一。本文将通过实例讲解如何使用 LangChain 快速构建一个智能问答系统。</p>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install langchain openai chromadb</span><br></pre></td></tr></table></figure>
+    <title>Hello World</title>
+    <url>/2025/02/28/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ol>
-<li><p><strong>Chain</strong></p>
-<ul>
-<li>LLMChain</li>
-<li>SimpleSequentialChain</li>
-<li>RouterChain</li>
-</ul>
-</li>
-<li><p><strong>Memory</strong></p>
-<ul>
-<li>ConversationBufferMemory</li>
-<li>ConversationSummaryMemory</li>
-</ul>
-</li>
-</ol>
-<h2 id="实战示例"><a href="#实战示例" class="headerlink" title="实战示例"></a>实战示例</h2><h3 id="1-基础配置"><a href="#1-基础配置" class="headerlink" title="1. 基础配置"></a>1. 基础配置</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain.llms <span class="keyword">import</span> OpenAI</span><br><span class="line"><span class="keyword">from</span> langchain.chains <span class="keyword">import</span> LLMChain</span><br><span class="line"><span class="keyword">from</span> langchain.prompts <span class="keyword">import</span> PromptTemplate</span><br><span class="line"></span><br><span class="line">llm = OpenAI(temperature=<span class="number">0.7</span>)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-创建提示模板"><a href="#2-创建提示模板" class="headerlink" title="2. 创建提示模板"></a>2. 创建提示模板</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">prompt = PromptTemplate(</span><br><span class="line">    input_variables=[<span class="string">&quot;question&quot;</span>],</span><br><span class="line">    template=<span class="string">&quot;请回答以下问题：&#123;question&#125;&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-构建问答链"><a href="#3-构建问答链" class="headerlink" title="3. 构建问答链"></a>3. 构建问答链</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">chain = LLMChain(</span><br><span class="line">    llm=llm,</span><br><span class="line">    prompt=prompt</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a>进阶功能</h2><ol>
-<li><strong>向量数据库集成</strong></li>
-<li><strong>多轮对话管理</strong></li>
-<li><strong>文档问答实现</strong></li>
-</ol>
-<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
-<li>提示词工程技巧</li>
-<li>错误处理机制</li>
-<li>性能优化建议</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过本文的学习，相信你已经掌握了使用 LangChain 构建 AI 应用的基础知识。 </p>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>LangChain：构建智能应用的全栈框架</title>
+    <url>/2024/03/20/langchain-guide/</url>
+    <content><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>
 ]]></content>
       <categories>
-        <category>实战教程</category>
+        <category>LLM工具链</category>
       </categories>
       <tags>
-        <tag>LangChain</tag>
-        <tag>Python</tag>
-        <tag>AI应用开发</tag>
+        <tag>RAG</tag>
+        <tag>应用开发</tag>
+        <tag>工具集成</tag>
+        <tag>数据处理</tag>
+        <tag>多模态Agent</tag>
+        <tag>工作流编排</tag>
+        <tag>知识库增强</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LlamaFactory：高效的LLM微调工具链</title>
+    <url>/2024/03/20/llamafactory-guide/</url>
+    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>微调策略</tag>
+        <tag>LoRA/QLoRA</tag>
+        <tag>参数优化</tag>
+        <tag>开源框架</tag>
+        <tag>低资源训练</tag>
+        <tag>模型适配</tag>
+        <tag>全流程工具链</tag>
       </tags>
   </entry>
   <entry>
@@ -205,6 +193,72 @@
         <tag>LLM</tag>
         <tag>GPT</tag>
         <tag>AI发展</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你使用 LangChain 构建 AI 应用</title>
+    <url>/2024/02/28/llm-practical-guide/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>LangChain 已经成为构建 LLM 应用的首选框架之一。本文将通过实例讲解如何使用 LangChain 快速构建一个智能问答系统。</p>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install langchain openai chromadb</span><br></pre></td></tr></table></figure>
+
+<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ol>
+<li><p><strong>Chain</strong></p>
+<ul>
+<li>LLMChain</li>
+<li>SimpleSequentialChain</li>
+<li>RouterChain</li>
+</ul>
+</li>
+<li><p><strong>Memory</strong></p>
+<ul>
+<li>ConversationBufferMemory</li>
+<li>ConversationSummaryMemory</li>
+</ul>
+</li>
+</ol>
+<h2 id="实战示例"><a href="#实战示例" class="headerlink" title="实战示例"></a>实战示例</h2><h3 id="1-基础配置"><a href="#1-基础配置" class="headerlink" title="1. 基础配置"></a>1. 基础配置</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain.llms <span class="keyword">import</span> OpenAI</span><br><span class="line"><span class="keyword">from</span> langchain.chains <span class="keyword">import</span> LLMChain</span><br><span class="line"><span class="keyword">from</span> langchain.prompts <span class="keyword">import</span> PromptTemplate</span><br><span class="line"></span><br><span class="line">llm = OpenAI(temperature=<span class="number">0.7</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-创建提示模板"><a href="#2-创建提示模板" class="headerlink" title="2. 创建提示模板"></a>2. 创建提示模板</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">prompt = PromptTemplate(</span><br><span class="line">    input_variables=[<span class="string">&quot;question&quot;</span>],</span><br><span class="line">    template=<span class="string">&quot;请回答以下问题：&#123;question&#125;&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-构建问答链"><a href="#3-构建问答链" class="headerlink" title="3. 构建问答链"></a>3. 构建问答链</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">chain = LLMChain(</span><br><span class="line">    llm=llm,</span><br><span class="line">    prompt=prompt</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a>进阶功能</h2><ol>
+<li><strong>向量数据库集成</strong></li>
+<li><strong>多轮对话管理</strong></li>
+<li><strong>文档问答实现</strong></li>
+</ol>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li>提示词工程技巧</li>
+<li>错误处理机制</li>
+<li>性能优化建议</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过本文的学习，相信你已经掌握了使用 LangChain 构建 AI 应用的基础知识。 </p>
+]]></content>
+      <categories>
+        <category>实战教程</category>
+      </categories>
+      <tags>
+        <tag>LangChain</tag>
+        <tag>Python</tag>
+        <tag>AI应用开发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ollama：轻量级本地LLM部署与管理工具</title>
+    <url>/2024/03/20/ollama-guide/</url>
+    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>本地模型部署</tag>
+        <tag>轻量化推理</tag>
+        <tag>模型管理</tag>
+        <tag>私有化部署</tag>
+        <tag>多模型支持</tag>
+        <tag>开发者工具</tag>
       </tags>
   </entry>
   <entry>
@@ -380,42 +434,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Ollama：轻量级本地LLM部署与管理工具</title>
-    <url>/2024/03/20/ollama-guide/</url>
-    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>本地模型部署</tag>
-        <tag>开源框架</tag>
-        <tag>轻量化推理</tag>
-        <tag>模型管理</tag>
-        <tag>私有化部署</tag>
-        <tag>多模型支持</tag>
-        <tag>开发者工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LlamaFactory：高效的LLM微调工具链</title>
-    <url>/2024/03/20/llamafactory-guide/</url>
-    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>微调策略</tag>
-        <tag>LoRA/QLoRA</tag>
-        <tag>参数优化</tag>
-        <tag>低资源训练</tag>
-        <tag>模型适配</tag>
-        <tag>全流程工具链</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Xinference：高性能分布式LLM推理框架</title>
     <url>/2024/03/20/xinference-guide/</url>
     <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
@@ -431,24 +449,6 @@
         <tag>多GPU支持</tag>
         <tag>模型托管</tag>
         <tag>性能优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LangChain：构建智能应用的全栈框架</title>
-    <url>/2024/03/20/langchain-guide/</url>
-    <content><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>应用开发</tag>
-        <tag>工具集成</tag>
-        <tag>数据处理</tag>
-        <tag>多模态Agent</tag>
-        <tag>工作流编排</tag>
-        <tag>知识库增强</tag>
       </tags>
   </entry>
 </search>
