@@ -98,6 +98,54 @@
       </tags>
   </entry>
   <entry>
+    <title>手把手教你使用 LangChain 构建 AI 应用</title>
+    <url>/2024/02/28/llm-practical-guide/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>LangChain 已经成为构建 LLM 应用的首选框架之一。本文将通过实例讲解如何使用 LangChain 快速构建一个智能问答系统。</p>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install langchain openai chromadb</span><br></pre></td></tr></table></figure>
+
+<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ol>
+<li><p><strong>Chain</strong></p>
+<ul>
+<li>LLMChain</li>
+<li>SimpleSequentialChain</li>
+<li>RouterChain</li>
+</ul>
+</li>
+<li><p><strong>Memory</strong></p>
+<ul>
+<li>ConversationBufferMemory</li>
+<li>ConversationSummaryMemory</li>
+</ul>
+</li>
+</ol>
+<h2 id="实战示例"><a href="#实战示例" class="headerlink" title="实战示例"></a>实战示例</h2><h3 id="1-基础配置"><a href="#1-基础配置" class="headerlink" title="1. 基础配置"></a>1. 基础配置</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain.llms <span class="keyword">import</span> OpenAI</span><br><span class="line"><span class="keyword">from</span> langchain.chains <span class="keyword">import</span> LLMChain</span><br><span class="line"><span class="keyword">from</span> langchain.prompts <span class="keyword">import</span> PromptTemplate</span><br><span class="line"></span><br><span class="line">llm = OpenAI(temperature=<span class="number">0.7</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-创建提示模板"><a href="#2-创建提示模板" class="headerlink" title="2. 创建提示模板"></a>2. 创建提示模板</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">prompt = PromptTemplate(</span><br><span class="line">    input_variables=[<span class="string">&quot;question&quot;</span>],</span><br><span class="line">    template=<span class="string">&quot;请回答以下问题：&#123;question&#125;&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-构建问答链"><a href="#3-构建问答链" class="headerlink" title="3. 构建问答链"></a>3. 构建问答链</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">chain = LLMChain(</span><br><span class="line">    llm=llm,</span><br><span class="line">    prompt=prompt</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a>进阶功能</h2><ol>
+<li><strong>向量数据库集成</strong></li>
+<li><strong>多轮对话管理</strong></li>
+<li><strong>文档问答实现</strong></li>
+</ol>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li>提示词工程技巧</li>
+<li>错误处理机制</li>
+<li>性能优化建议</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过本文的学习，相信你已经掌握了使用 LangChain 构建 AI 应用的基础知识。 </p>
+]]></content>
+      <categories>
+        <category>实战教程</category>
+      </categories>
+      <tags>
+        <tag>LangChain</tag>
+        <tag>Python</tag>
+        <tag>AI应用开发</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>大语言模型（LLM）的发展历程与未来展望</title>
     <url>/2024/02/28/llm-development-overview/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>大语言模型（Large Language Models，LLM）已经成为人工智能领域最炙手可热的研究方向。从 GPT-3 到 Claude，从 LLaMA 到 Gemini，大语言模型的发展日新月异。本文将带您深入了解 LLM 的发展历程、现状与未来趋势。</p>
@@ -160,54 +208,6 @@
       </tags>
   </entry>
   <entry>
-    <title>手把手教你使用 LangChain 构建 AI 应用</title>
-    <url>/2024/02/28/llm-practical-guide/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>LangChain 已经成为构建 LLM 应用的首选框架之一。本文将通过实例讲解如何使用 LangChain 快速构建一个智能问答系统。</p>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pip install langchain openai chromadb</span><br></pre></td></tr></table></figure>
-
-<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><ol>
-<li><p><strong>Chain</strong></p>
-<ul>
-<li>LLMChain</li>
-<li>SimpleSequentialChain</li>
-<li>RouterChain</li>
-</ul>
-</li>
-<li><p><strong>Memory</strong></p>
-<ul>
-<li>ConversationBufferMemory</li>
-<li>ConversationSummaryMemory</li>
-</ul>
-</li>
-</ol>
-<h2 id="实战示例"><a href="#实战示例" class="headerlink" title="实战示例"></a>实战示例</h2><h3 id="1-基础配置"><a href="#1-基础配置" class="headerlink" title="1. 基础配置"></a>1. 基础配置</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain.llms <span class="keyword">import</span> OpenAI</span><br><span class="line"><span class="keyword">from</span> langchain.chains <span class="keyword">import</span> LLMChain</span><br><span class="line"><span class="keyword">from</span> langchain.prompts <span class="keyword">import</span> PromptTemplate</span><br><span class="line"></span><br><span class="line">llm = OpenAI(temperature=<span class="number">0.7</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-创建提示模板"><a href="#2-创建提示模板" class="headerlink" title="2. 创建提示模板"></a>2. 创建提示模板</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">prompt = PromptTemplate(</span><br><span class="line">    input_variables=[<span class="string">&quot;question&quot;</span>],</span><br><span class="line">    template=<span class="string">&quot;请回答以下问题：&#123;question&#125;&quot;</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-构建问答链"><a href="#3-构建问答链" class="headerlink" title="3. 构建问答链"></a>3. 构建问答链</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">chain = LLMChain(</span><br><span class="line">    llm=llm,</span><br><span class="line">    prompt=prompt</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<h2 id="进阶功能"><a href="#进阶功能" class="headerlink" title="进阶功能"></a>进阶功能</h2><ol>
-<li><strong>向量数据库集成</strong></li>
-<li><strong>多轮对话管理</strong></li>
-<li><strong>文档问答实现</strong></li>
-</ol>
-<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
-<li>提示词工程技巧</li>
-<li>错误处理机制</li>
-<li>性能优化建议</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过本文的学习，相信你已经掌握了使用 LangChain 构建 AI 应用的基础知识。 </p>
-]]></content>
-      <categories>
-        <category>实战教程</category>
-      </categories>
-      <tags>
-        <tag>LangChain</tag>
-        <tag>Python</tag>
-        <tag>AI应用开发</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>提示词工程（Prompt Engineering）进阶指南</title>
     <url>/2024/02/28/prompt-engineering-deep-dive/</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>提示词工程（Prompt Engineering）是充分发挥 LLM 能力的关键。本文将深入探讨高级提示词技术和策略。</p>
@@ -261,78 +261,6 @@
         <tag>Prompt Engineering</tag>
         <tag>AI优化</tag>
         <tag>最佳实践</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LlamaFactory：高效的LLM微调工具链</title>
-    <url>/2024/03/20/llamafactory-guide/</url>
-    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>微调策略</tag>
-        <tag>LoRA/QLoRA</tag>
-        <tag>参数优化</tag>
-        <tag>开源框架</tag>
-        <tag>低资源训练</tag>
-        <tag>模型适配</tag>
-        <tag>全流程工具链</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ollama：轻量级本地LLM部署与管理工具</title>
-    <url>/2024/03/20/ollama-guide/</url>
-    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>本地模型部署</tag>
-        <tag>轻量化推理</tag>
-        <tag>模型管理</tag>
-        <tag>私有化部署</tag>
-        <tag>多模型支持</tag>
-        <tag>开发者工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LangChain：构建智能应用的全栈框架</title>
-    <url>/2024/03/20/langchain-guide/</url>
-    <content><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>RAG</tag>
-        <tag>应用开发</tag>
-        <tag>工具集成</tag>
-        <tag>数据处理</tag>
-        <tag>多模态Agent</tag>
-        <tag>工作流编排</tag>
-        <tag>知识库增强</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xinference：高性能分布式LLM推理框架</title>
-    <url>/2024/03/20/xinference-guide/</url>
-    <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>开源框架</tag>
-        <tag>分布式部署</tag>
-        <tag>推理加速</tag>
-        <tag>生产级服务</tag>
-        <tag>多GPU支持</tag>
-        <tag>模型托管</tag>
-        <tag>性能优化</tag>
       </tags>
   </entry>
   <entry>
@@ -449,6 +377,78 @@
         <tag>IKEv2</tag>
         <tag>StrongSwan</tag>
         <tag>网络安全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ollama：轻量级本地LLM部署与管理工具</title>
+    <url>/2024/03/20/ollama-guide/</url>
+    <content><![CDATA[<p>[文章内容与ollama.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>本地模型部署</tag>
+        <tag>开源框架</tag>
+        <tag>轻量化推理</tag>
+        <tag>模型管理</tag>
+        <tag>私有化部署</tag>
+        <tag>多模型支持</tag>
+        <tag>开发者工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LlamaFactory：高效的LLM微调工具链</title>
+    <url>/2024/03/20/llamafactory-guide/</url>
+    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>微调策略</tag>
+        <tag>LoRA/QLoRA</tag>
+        <tag>参数优化</tag>
+        <tag>低资源训练</tag>
+        <tag>模型适配</tag>
+        <tag>全流程工具链</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Xinference：高性能分布式LLM推理框架</title>
+    <url>/2024/03/20/xinference-guide/</url>
+    <content><![CDATA[<p>[文章内容与xinference.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>开源框架</tag>
+        <tag>分布式部署</tag>
+        <tag>推理加速</tag>
+        <tag>生产级服务</tag>
+        <tag>多GPU支持</tag>
+        <tag>模型托管</tag>
+        <tag>性能优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LangChain：构建智能应用的全栈框架</title>
+    <url>/2024/03/20/langchain-guide/</url>
+    <content><![CDATA[<p>[文章内容与langchain.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>RAG</tag>
+        <tag>应用开发</tag>
+        <tag>工具集成</tag>
+        <tag>数据处理</tag>
+        <tag>多模态Agent</tag>
+        <tag>工作流编排</tag>
+        <tag>知识库增强</tag>
       </tags>
   </entry>
 </search>
