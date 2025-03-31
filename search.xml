@@ -80,6 +80,24 @@
       </tags>
   </entry>
   <entry>
+    <title>LlamaFactory：高效的LLM微调工具链</title>
+    <url>/2024/03/20/llamafactory-guide/</url>
+    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
+]]></content>
+      <categories>
+        <category>LLM工具链</category>
+      </categories>
+      <tags>
+        <tag>微调策略</tag>
+        <tag>LoRA/QLoRA</tag>
+        <tag>参数优化</tag>
+        <tag>开源框架</tag>
+        <tag>低资源训练</tag>
+        <tag>模型适配</tag>
+        <tag>全流程工具链</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/02/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -113,24 +131,6 @@
         <tag>多模态Agent</tag>
         <tag>工作流编排</tag>
         <tag>知识库增强</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LlamaFactory：高效的LLM微调工具链</title>
-    <url>/2024/03/20/llamafactory-guide/</url>
-    <content><![CDATA[<p>[文章内容与llamafactory.md相同，但已移动到正确位置] </p>
-]]></content>
-      <categories>
-        <category>LLM工具链</category>
-      </categories>
-      <tags>
-        <tag>微调策略</tag>
-        <tag>LoRA/QLoRA</tag>
-        <tag>参数优化</tag>
-        <tag>开源框架</tag>
-        <tag>低资源训练</tag>
-        <tag>模型适配</tag>
-        <tag>全流程工具链</tag>
       </tags>
   </entry>
   <entry>
